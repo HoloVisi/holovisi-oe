@@ -1,3 +1,6 @@
+**Caveat**
+This is an experimental project, only for the purpose of practice and testing, its code is heavily stolen from OpenELEC
+
 [HoloVisi](http://www.holovisi.com)
 
 # HoloVisi - Digital home, Opensource, for Everyone
