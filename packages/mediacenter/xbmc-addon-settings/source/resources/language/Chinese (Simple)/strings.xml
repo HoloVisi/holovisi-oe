@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+
+	<!-- System -->
+	<string id="2000">系统</string>
+	<string id="2010">键盘</string>
+	<string id="2011">键盘布局</string>
+	<string id="2012">替代键盘布局（可选）</string>
+	<string id="2020">系统更新</string>
+	<string id="2021">系统更新</string>
+	<string id="2050">LCD/VFD</string>
+	<string id="2051">LCD驱动</string>
+	<string id="2060">硬盘待机</string>
+	<string id="2061">开启硬盘待机</string>
+	<string id="2062">硬盘待机时长（分钟）</string>
+	<string id="2070">其它</string>
+	<string id="2071">启动XBMC前等待网络</string>
+	<string id="2072">等待时长（秒）</string>
+
+	<!-- Network -->
+	<string id="2100">网络</string>
+	<string id="2101">网络 2</string>
+	<string id="2110">基本</string>
+	<string id="2111">主机名</string>
+	<string id="2120">网卡</string>
+	<string id="2121">网络技术</string>
+	<string id="2122">网络接口</string>
+	<string id="2130">IP 设置</string>
+	<string id="2131">静态 IP 地址</string>
+	<string id="2132">网络掩码前缀长度</string>
+	<string id="2133">网关</string>
+	<string id="2134">域名服务器 1</string>
+	<string id="2135">域名服务器 2</string>
+	<string id="2136">域名服务器 3</string>
+	<string id="2150">无线网络（WLAN）设置</string>
+	<string id="2151">无线网络服务集标识（WLAN SSID）</string>
+	<string id="2152">隐藏网络</string>
+	<string id="2153">无线网络（WLAN）安全</string>
+	<string id="2154">无线网络密码短语（WLAN Passphrase）</string>
+
+	<!-- SERVICES -->
+	<string id="5000">服务</string>
+	<string id="5010">Samba</string>
+	<string id="5011">开机时启动Samba</string>
+	<string id="5012">使用Samba密码</string>
+	<string id="5013">Samba用户名</string>
+	<string id="5014">Samba密码</string>
+
+	<string id="5020">SSH</string>
+	<string id="5021">开机时启动SSH</string>
+	<string id="5022">关闭密码验证</string>
+
+	<string id="5030">定时任务（crond）</string>
+	<string id="5031">开机时启动定时任务（crond）</string>
+
+	<string id="5040">系统日志（syslog）</string>
+	<string id="5041">使用远程系统日志服务器</string>
+	<string id="5042">远程系统日志IP地址</string>
+
+</strings>
