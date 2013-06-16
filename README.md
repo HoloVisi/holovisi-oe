@@ -1,9 +1,12 @@
 **Caveat**
-This is an experimental project, only for the purpose of practice and testing, its code is heavily stolen from OpenELEC
+This is an experimental project, only for the purpose of practice and testing, its code is heavily stolen from HoloVisi
 
 [HoloVisi](http://www.holovisi.com)
 
 # HoloVisi - Digital home, Opensource, for Everyone
+
+
+HoloVisi（中文名：海洛维视）是一款专门运行XBMC的嵌入式操作系统。
 
 HoloVisi runs [XBMC](http://xbmc.org), an award-winning free and open source (GPL) software media 
 player and entertainment hub for digital media. For more info see http://xbmc.org .
@@ -13,11 +16,11 @@ providing cutting edge hardware support to deliver a set-top box experience.
 
 **Source code**
 
-* https://github.com/HoloVisi/HoloVisi
+* https://github.com/HoloVisi/holovisi-oe
 
 **Installation**
 
-* Please read the instructions in our wiki (http://wiki.holovisi.com/index.php?title=Installation) on how to install.
+* 
 
 **Known issues**
 
@@ -51,8 +54,11 @@ providing cutting edge hardware support to deliver a set-top box experience.
 * Minimal hardware requirements
 * Ultra fast boot
 * Optimized builds for platforms such as ION, Intel, Fusion
-* Simple configuration via XBMC itself
+* Simple install to HDD, SSD, Compact Flash, SD card, pen drive or other
+* Simple configuration through the XBMC interface
 * Plug and Play external storage
+* File sharing out of the box
+* Chinese localization
 
 **Software**
 
