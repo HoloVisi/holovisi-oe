@@ -88,7 +88,7 @@ ECHO.
 ECHO.
 ECHO.
 
-ECHO. | >NUL format %DRIVE% /V:OPENELEC /Q /FS:FAT32 /X
+ECHO. | >NUL format %DRIVE% /V:HOLOVISI /Q /FS:FAT32 /X
 IF ERRORLEVEL 1 goto InvalidDrive
 >NUL 3rdparty\syslinux\win32\syslinux.exe -f -m -a %DRIVE%
 >NUL copy target\* %DRIVE%
@@ -135,12 +135,12 @@ ECHO.  >> %DRIVE%\syslinux.cfg
 ECHO LABEL installer >> %DRIVE%\syslinux.cfg
 ECHO   MENU LABEL Run HoloVisi Installer >> %DRIVE%\syslinux.cfg
 ECHO   KERNEL /KERNEL >> %DRIVE%\syslinux.cfg
-ECHO   APPEND boot=LABEL=OPENELEC installer quiet vga=current >> %DRIVE%\syslinux.cfg
+ECHO   APPEND boot=LABEL=HOLOVISI installer quiet vga=current >> %DRIVE%\syslinux.cfg
 ECHO. >> %DRIVE%\syslinux.cfg
 ECHO LABEL live >> %DRIVE%\syslinux.cfg
 ECHO   MENU LABEL Run HoloVisi Live >> %DRIVE%\syslinux.cfg
 ECHO   KERNEL /KERNEL >> %DRIVE%\syslinux.cfg
-ECHO   APPEND boot=LABEL=OPENELEC disk=FILE=STORAGE,512 quiet vga=current >> %DRIVE%\syslinux.cfg
+ECHO   APPEND boot=LABEL=HOLOVISI disk=FILE=STORAGE,512 quiet vga=current >> %DRIVE%\syslinux.cfg
 GOTO END
 
 :InvalidDrive

@@ -148,8 +148,8 @@ prepare_target(){
   echo "INFO: Erasing existing partition schemes on ${TARGET}"
   dd if=/dev/zero of=${TARGET} bs=512 count=100 1>&3 2>&4
   gpt destroy ${TARGET} 1>&3 2>&4
-  echo "INFO: Creating MBR 'OPENELEC' disk on ${TARGET}"
-  diskutil eraseDisk MS-DOS OPENELEC MBR ${TARGET} 1>&3 2>&4
+  echo "INFO: Creating MBR 'HOLOVISI' disk on ${TARGET}"
+  diskutil eraseDisk MS-DOS HOLOVISI MBR ${TARGET} 1>&3 2>&4
   unmount_target
   chmod 755 3rdparty/macfiles/*
   cat 3rdparty/macfiles/mbr.bin > ${TARGET}
@@ -178,14 +178,14 @@ check_checksums(){
 
 copy_files(){
   mount_target
-  echo "INFO: Copying SYSTEM and KERNEL files to 'OPENELEC'"
-  cp -a target/KERNEL /Volumes/OPENELEC/
-  cp -a target/SYSTEM /Volumes/OPENELEC/
-  echo "INFO: Copying syslinux files to 'OPENELEC'"
-  cp -a 3rdparty/macfiles/vesamenu.c32 /Volumes/OPENELEC/
-  cp -a splash.png /Volumes/OPENELEC/
-  echo "INFO: Creating syslinux.cfg on 'OPENELEC'"
-  cat >/Volumes/OPENELEC/syslinux.cfg << EOF
+  echo "INFO: Copying SYSTEM and KERNEL files to 'HOLOVISI'"
+  cp -a target/KERNEL /Volumes/HOLOVISI/
+  cp -a target/SYSTEM /Volumes/HOLOVISI/
+  echo "INFO: Copying syslinux files to 'HOLOVISI'"
+  cp -a 3rdparty/macfiles/vesamenu.c32 /Volumes/HOLOVISI/
+  cp -a splash.png /Volumes/HOLOVISI/
+  echo "INFO: Creating syslinux.cfg on 'HOLOVISI'"
+  cat >/Volumes/HOLOVISI/syslinux.cfg << EOF
 UI vesamenu.c32
 PROMPT 0
 MENU TITLE Boot Menu
@@ -218,12 +218,12 @@ MENU COLOR tabmsg       31;40   #ff868787 #00000000 std
 LABEL installer
   MENU LABEL Run HoloVisi Installer
   KERNEL /KERNEL
-  APPEND boot=LABEL=OPENELEC installer quiet vga=current
+  APPEND boot=LABEL=HOLOVISI installer quiet vga=current
 
 LABEL live
   MENU LABEL Run HoloVisi Live
   KERNEL /KERNEL
-  APPEND boot=LABEL=OPENELEC disk=FILE=STORAGE,512 quiet vga=current
+  APPEND boot=LABEL=HOLOVISI disk=FILE=STORAGE,512 quiet vga=current
 
 EOF
 }

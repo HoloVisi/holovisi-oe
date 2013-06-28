@@ -6,7 +6,7 @@ This is an experimental project, only for the purpose of practice and testing, i
 # HoloVisi - Digital home, Opensource, for Everyone
 
 
-HoloVisi（中文名：海洛维视）是一款专门运行XBMC的嵌入式操作系统。
+HoloVisi（中文名：海洛维视）是一款运行XBMC，专为智能电视和网络机顶盒设计的嵌入式操作系统。
 
 HoloVisi runs [XBMC](http://xbmc.org), an award-winning free and open source (GPL) software media 
 player and entertainment hub for digital media. For more info see http://xbmc.org .
@@ -50,15 +50,15 @@ providing cutting edge hardware support to deliver a set-top box experience.
 
 **Features**
 
-* System size ~ 90 - 130MB
-* Minimal hardware requirements
-* Ultra fast boot
-* Optimized builds for platforms such as ION, Intel, Fusion
-* Simple install to HDD, SSD, Compact Flash, SD card, pen drive or other
-* Simple configuration through the XBMC interface
-* Plug and Play external storage
-* File sharing out of the box
-* Chinese localization
+* 100%遵循“3米用户界面”（10-feet UI）设计原则
+* 开源且免费
+* 为多种平台优化
+* 支持所有主流媒体格式
+* 即插即用外部存储
+* 家庭媒体中心：自动扫描、播放、管理局域网媒体文件
+* 极易安装到硬盘、SD卡、闪存（Flash）、USB等媒介
+* 通过XBMC界面进行系统设置
+* 中文本地化
 
 **Software**
 

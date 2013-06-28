@@ -23,7 +23,7 @@
 . config/options $1
 
 mkdir -p $INSTALL/usr/bin
-  if [ "$OPENELEC_VERSION" = devel ]; then
+  if [ "$HOLOVISI_VERSION" = devel ]; then
     cp $PKG_DIR/scripts/autoupdate.devel $INSTALL/usr/bin/autoupdate
   else
     cp $PKG_DIR/scripts/autoupdate.release $INSTALL/usr/bin/autoupdate
@@ -33,7 +33,7 @@ mkdir -p $INSTALL/etc
   if [ -f $PROJECT_DIR/$PROJECT/autoupdate/repo.conf ]; then
     cp $PROJECT_DIR/$PROJECT/autoupdate/repo.conf $INSTALL/etc
   else
-    if [ "$OPENELEC_VERSION" = devel ]; then
+    if [ "$HOLOVISI_VERSION" = devel ]; then
       cp $PKG_DIR/config/repo.conf.devel $INSTALL/etc/repo.conf
     else
       cp $PKG_DIR/config/repo.conf.release $INSTALL/etc/repo.conf
