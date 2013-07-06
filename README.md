@@ -1,18 +1,15 @@
 **Caveat**
-This is an experimental project, only for the purpose of practice and testing, its code is heavily stolen from HoloVisi
+This is an experimental project, only for the purpose of practice and testing, its code is heavily stolen from OpenELEC
 
 [HoloVisi](http://www.holovisi.com)
 
-# HoloVisi - Digital home, Opensource, for Everyone
+# HoloVisi - Digital home, Open source, for Everyone
 
 
-HoloVisi（中文名：海洛维视）是一款运行XBMC，专为智能电视和网络机顶盒设计的嵌入式操作系统。
-
-HoloVisi runs [XBMC](http://xbmc.org), an award-winning free and open source (GPL) software media 
-player and entertainment hub for digital media. For more info see http://xbmc.org .
-The base system has been designed and built from the ground up to be as 
-efficient as possible – consuming only tiny disk and memory footprints and
-providing cutting edge hardware support to deliver a set-top box experience.
+HoloVisi （中文名：海洛维视）= 嵌入式Linux + XBMC + 核心组件
+* 嵌入式Linux：对包括内核（Kernel）在内的超过400个软件包进行交叉编译、测试，针对不同硬件平台进行优化，专门运行XBMC，以“从下至上”方式构建
+* XBMC：是一个优秀的自由和开源的（GPL）媒体中心软件，创建于2003年，其目标是要成为HTPC（家庭影院）的最佳伴侣，该软件由遍布世界各地的自愿者开发维护。HoloVisi的策略是追踪其发行版本，以“补丁”方式进行改造
+* 核心组件：将自开发的系统管理功能嵌入到XBMC中，并且内置若干媒体资源组件
 
 **Source code**
 
@@ -50,14 +47,15 @@ providing cutting edge hardware support to deliver a set-top box experience.
 
 **Features**
 
-* 100%遵循“3米用户界面”（10-feet UI）设计原则
+* 用户界面100%按家庭影院理念设计
 * 开源且免费
-* 为多种平台优化
+* 超快启动，并针对多种平台进行优化
 * 支持所有主流媒体格式
 * 即插即用外部存储
-* 家庭媒体中心：自动扫描、播放、管理局域网媒体文件
-* 极易安装到硬盘、SD卡、闪存（Flash）、USB等媒介
+* 家庭媒体中心：自动扫描、播放、管理局域网中的媒体文件
+* 很容易安装到硬盘、SD卡、闪存（Flash）、USB等媒介
 * 通过XBMC界面进行系统设置
+* 通过组件扩展功能。组件类似Android应用，但开发难度远低于后者
 * 中文本地化
 
 **Software**
