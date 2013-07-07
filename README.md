@@ -6,7 +6,7 @@ This is an experimental project, only for the purpose of practice and testing, i
 # HoloVisi - Digital home, Open source, for Everyone
 
 
-HoloVisi （中文名：海洛维视）= 嵌入式Linux + XBMC + 核心组件
+HoloVisi （中文名：和乐维视）= 嵌入式Linux + XBMC + 核心组件
 * 嵌入式Linux：对包括内核（Kernel）在内的超过400个软件包进行交叉编译、测试，针对不同硬件平台进行优化，专门运行XBMC，以“从下至上”方式构建
 * XBMC：是一个优秀的自由和开源的（GPL）媒体中心软件，创建于2003年，其目标是要成为HTPC（家庭影院）的最佳伴侣，该软件由遍布世界各地的自愿者开发维护。HoloVisi的策略是追踪其发行版本，以“补丁”方式进行改造
 * 核心组件：将自开发的系统管理功能嵌入到XBMC中，并且内置若干媒体资源组件
